@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFSampleApp.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="Android" Value="6,0,6,0" />
+            <On Platform="iOS" Value="6,20,6,0" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <StackLayout>
+        <!--  Place new controls here  -->
+        <Label HorizontalOptions="Center" Text="Welcome to OpenGL!" />
+        <OpenGLView x:Name="openGLView" HasRenderLoop="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+
+        <CheckBox CheckedChanged="CheckBox_CheckedChanged" IsChecked="True" />
+        <Button Clicked="Button_Clicked" Text="Display" />
+    </StackLayout>
+
+</ContentPage>
