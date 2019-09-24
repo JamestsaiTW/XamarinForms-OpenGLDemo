@@ -9,3 +9,4 @@
 /DemoCode/XFSampleApp/XFSampleApp.Android/obj
 *.user
 /DemoCode/XFSampleApp/XFSampleApp.iOS/obj
+*.suo
